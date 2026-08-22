@@ -1,0 +1,26 @@
+name: 💠 Feature request
+description: Want to add a new feature to fastshell?
+labels: ["enhancement"]
+
+body:
+  - type: textarea
+    attributes:
+      label: Describe the feature you want to add
+      description: Please provide a clear and concise description of the feature you would like to see implemented in fastshell.
+      placeholder: "I would like to see a feature that allows users to..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Why is this feature important?
+      description: Explain why this feature would be beneficial to users and how it would improve the overall experience of using fastshell.
+      placeholder: "This feature is important because..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Provide any additional context or information that may help us understand your feature request better.
+      placeholder: "Additional context or screenshots..."
+    validations:
+      required: false
