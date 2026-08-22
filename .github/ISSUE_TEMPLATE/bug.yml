@@ -1,0 +1,24 @@
+name: 🐛 Bug report
+description: Found a bug in fastshell? Report it!
+labels: ["bug"]
+
+body:
+  - type: input
+    attributes:
+      label: Short description
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Detailed description
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
