@@ -1,0 +1,31 @@
+name: Test build
+
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    test-build:
+        name: Test build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4.0.0
+            - name: Install libs
+              run: |
+                sudo apt install cmake make gcc g++ libc6 libstdc++6 -y
+            - name: Compile fastshell
+              run: |
+                cmake -S . -B build -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
+                cmake --build build
+    test-build-with-linter:
+        name: Test build with linter
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4.0.0
+            - name: Install libs
+              run: |
+                sudo apt install cmake make gcc g++ clang-tidy libc6 libstdc++6 -y
+            - name: Compile fastshell
+              run: |
+                cmake -S . -B build -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_CLANG_TIDY="clang-tidy;-warnings-as-errors=*" -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-warnings-as-errors=*"
+                cmake --build build
