@@ -1,0 +1,11 @@
+Package: fastshell
+Version: 0.1.0
+Architecture: amd64
+Section: devel
+Maintainer: barsik0396 <barsik0396@proton.me>
+Description: fast and small shell
+ fastshell is small, fast and secure shell written on C and C++.
+Homepage: https://barsik0396.github.io/fastshell
+Vcs-Browser: https://github.com/barsik0396/fastshell
+Vcs-Git: https://github.com/barsik0396/fastshell.git
+Dependencies: dash libc6 libstdc++6 libgcc-s1
