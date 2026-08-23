@@ -23,9 +23,6 @@ fastshell is very fast, stable, secure and small shell written on C and C++.
 3. Install
 4. Done; you can execute `fastshell` in your terminal!
 
-### 🪟 On Windows
-Just download single binary from [**Releases** page](https://github.com/barsik0396/fastshell/releases)
-
 ### 🍎 On macOS
 
 > No official fastshell binaries for macOS.
