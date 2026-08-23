@@ -4,6 +4,7 @@
 
 #include "include/sh.h"
 #include "include/cycle.h"
+#include "include/help.h"
 
 void call(char *text) {
     if (strcmp(text, "exit") == 0) {
@@ -12,5 +13,7 @@ void call(char *text) {
         sh();
     } else if (strcmp(text, "cycle") == 0) {
         cycle();
+    } else if (strcmp(text, "help") == 0) {
+        help();
     }
 }
