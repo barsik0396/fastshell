@@ -1,0 +1,16 @@
+name: Close stale issues
+
+on:
+    schedule:
+        - cron: "0 0 * * *"
+    workflow_dispatch:
+jobs:
+    close-stale-issues:
+        name: Close stale issues and PRs
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/stale@v4.0.0
+              with:
+                repo-token: ${{ github.token }}
+                days-before-stale: 7
+                days-before-close: 7
