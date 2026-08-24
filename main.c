@@ -8,6 +8,7 @@
 #endif
 
 int main(int argc, char *argv[]) {
+    (void)argc;
     printf("Welcome to \x1b[32;1mfastshell\x1b[0m v0.2.0!\n");
     char *user = getenv("USER");
     if (!user) {
