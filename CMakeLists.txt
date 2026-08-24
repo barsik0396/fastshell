@@ -4,7 +4,7 @@ project(fastshell C CXX)
 
 add_executable(fastshell
     main.c call.c input.c
-    commands/sh.c commands/cycle.cpp commands/help.c
+    commands/sh.c commands/cycle.cpp commands/help.c commands/whoami.c
     etc/isdbg.c etc/panic.cpp etc/expanduser.c
 )
 
