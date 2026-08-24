@@ -1,0 +1,1 @@
+char *expanduser(char *path);
