@@ -8,6 +8,7 @@
 #endif
 
 int main(void) {
+    printf("Welcome to \x1b[32;1mfastshell\x1b[0m v0.2.0!\n");
     char *user = getenv("USER");
     if (!user) {
         printf("\x1b[1;37mfastshell\x1b[0m \x1b[33;1mwarn\x1b[0m no USER var found in env!\n");
