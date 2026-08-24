@@ -1,9 +1,13 @@
 #include "input.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 char *input(char *buffer) {
-    fgets(buffer, sizeof(buffer), stdin);
+    if (fgets(buffer, sizeof(buffer), stdin) == NULL) {
+        printf("\nBye!\n");
+        exit(0);
+    }
     buffer[strcspn(buffer, "\n")] = '\0';
     return buffer;
 }
