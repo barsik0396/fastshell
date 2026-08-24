@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "etc/rmprefix.h"
+#include "etc/dirs.h"
+
 #include "include/sh.h"
 #include "include/cycle.h"
 #include "include/help.h"
@@ -25,6 +28,8 @@ void call(char *text, char *argv_1) {
         reload(argv_1);
     } else if (strcmp(text, "pwd") == 0) {
         pwd();
+    } else if (strncmp(text, "cd ", 3) == 0) {
+        change_dir(rmprefix(text, "cd "));
     } else if (strlen(text) == 0) {
         // nothing
     } else {
