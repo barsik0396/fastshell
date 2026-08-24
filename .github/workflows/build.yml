@@ -27,5 +27,5 @@ jobs:
                 sudo apt install cmake make gcc g++ clang-tidy libc6 libstdc++6 -y
             - name: Compile fastshell
               run: |
-                cmake -S . -B build -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_CLANG_TIDY="clang-tidy;-warnings-as-errors=*" -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-warnings-as-errors=*"
+                cmake -S . -B build -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_CLANG_TIDY="clang-tidy;-warnings-as-errors=*" -DCMAKE_CXX_CLANG_TIDY="clang-tidy;-warnings-as-errors=*" -DWARNS_AS_ERRS
                 cmake --build build

@@ -11,11 +11,11 @@ int main(int argc, char *argv[]) {
     (void)argc;
     printf("Welcome to \x1b[32;1mfastshell\x1b[0m v0.2.0!\n");
     char *user = getenv("USER");
-    if (!user) {
+    if (!user) { // if USER var isn't exists
         printf("\x1b[1;37mfastshell\x1b[0m \x1b[33;1mwarn\x1b[0m no USER var found in env!\n");
     }
     while (1) {
-        char buffer[8192];
+        char buffer[8192]; // very big but not unlimited
         if (user) {
             printf("(%s) fastshell# ", user);
         } else {

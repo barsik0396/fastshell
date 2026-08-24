@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 char *input(char *buffer) {
-    if (fgets(buffer, sizeof(buffer), stdin) == NULL) {
+    if (fgets(buffer, sizeof(buffer), stdin) == NULL) { // if EOF
         printf("\nBye!\n");
         exit(0);
     }
