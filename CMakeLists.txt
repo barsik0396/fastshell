@@ -10,6 +10,7 @@ add_executable(fastshell
     commands/cycle.cpp
     commands/help.c
     commands/whoami.c
+    commands/reload.c
     etc/isdbg.c
     etc/panic.cpp
     etc/expanduser.c

@@ -6,8 +6,9 @@
 #include "include/cycle.h"
 #include "include/help.h"
 #include "include/whoami.h"
+#include "include/reload.h"
 
-void call(char *text) {
+void call(char *text, char *argv_1) {
     if (strcmp(text, "exit") == 0) {
         exit(0);
     } else if (strcmp(text, "sh") == 0) {
@@ -18,5 +19,7 @@ void call(char *text) {
         help();
     } else if (strcmp(text, "whoami") == 0) {
         whoami();
+    } else if (strcmp(text, "reload") == 0) {
+        reload(argv_1);
     }
 }

@@ -1,0 +1,1 @@
+void reload(char *current);

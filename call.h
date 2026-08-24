@@ -1,1 +1,1 @@
-void call(char *text);
+void call(char *text, char *argv_1);

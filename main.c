@@ -7,7 +7,7 @@
 #error "do not compile fastshell on windows!"
 #endif
 
-int main(void) {
+int main(int argc, char *argv[]) {
     printf("Welcome to \x1b[32;1mfastshell\x1b[0m v0.2.0!\n");
     char *user = getenv("USER");
     if (!user) {
@@ -21,6 +21,6 @@ int main(void) {
             printf("fastshell# ");
         }
         char *output = input(buffer);
-        call(output);
+        call(output, argv[0]);
     }
 }
