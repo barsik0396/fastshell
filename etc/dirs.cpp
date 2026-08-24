@@ -3,7 +3,7 @@
 #include <filesystem>
 
 // "pwd"
-extern "C" char *get_dir_now(char *) {
+extern "C" char *get_dir_now(void) {
     static std::string data = std::filesystem::current_path(); // gets current directory
 
     return data.data();

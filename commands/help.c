@@ -6,6 +6,7 @@ void help(void) {
     printf("  help               show this help\n");
     printf("  cycle              just \"for (i <= 1000000)\"...\n");
     printf("  sh                 run non-fastshell commands\n");
-    printf("  reload             restart fastshell");
-    printf("  whoami             who am i?");
+    printf("  reload             restart fastshell\n");
+    printf("  whoami             who am i?\n");
+    printf("  pwd                show current directory\n");
 }

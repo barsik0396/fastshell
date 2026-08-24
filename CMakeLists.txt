@@ -6,6 +6,7 @@ add_executable(fastshell
     main.c call.c input.c
     commands/sh.c commands/cycle.cpp commands/help.c
     commands/whoami.c commands/reload.c
+    commands/pwd.cpp
     etc/isdbg.c etc/panic.cpp etc/expanduser.c
     etc/dirs.cpp
 )

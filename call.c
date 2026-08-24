@@ -8,6 +8,7 @@
 #include "include/help.h"
 #include "include/whoami.h"
 #include "include/reload.h"
+#include "include/pwd.h"
 
 void call(char *text, char *argv_1) {
     if (strcmp(text, "exit") == 0) {
@@ -22,6 +23,8 @@ void call(char *text, char *argv_1) {
         whoami();
     } else if (strcmp(text, "reload") == 0) {
         reload(argv_1);
+    } else if (strcmp(text, "pwd") == 0) {
+        pwd();
     } else if (strlen(text) == 0) {
         // nothing
     } else {

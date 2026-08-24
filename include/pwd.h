@@ -1,8 +1,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-char *get_dir_now(void);
-void change_dir(char *dir);
+void pwd(void);
 #ifdef __cplusplus
 }
 #endif
