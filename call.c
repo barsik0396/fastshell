@@ -1,6 +1,7 @@
 #include "call.h"
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "include/sh.h"
 #include "include/cycle.h"
