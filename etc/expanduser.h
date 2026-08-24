@@ -1,1 +1,1 @@
-char *expanduser(char *path);
+char *expanduser(const char *path);
