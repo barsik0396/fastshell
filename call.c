@@ -21,5 +21,7 @@ void call(char *text, char *argv_1) {
         whoami();
     } else if (strcmp(text, "reload") == 0) {
         reload(argv_1);
+    } else {
+        printf("\x1b[1;31mUnknown command!\x1b[0m\n");
     }
 }
