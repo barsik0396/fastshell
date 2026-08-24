@@ -8,7 +8,7 @@ add_executable(fastshell
     commands/whoami.c commands/reload.c
     commands/pwd.cpp
     etc/isdbg.c etc/panic.cpp etc/expanduser.c
-    etc/dirs.cpp
+    etc/dirs.cpp etc/rmprefix.cpp
 )
 
 target_compile_options(fastshell PRIVATE
