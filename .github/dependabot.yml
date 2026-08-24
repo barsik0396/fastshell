@@ -3,5 +3,6 @@ updates:
   - package-ecosystem: github-actions
     schedule:
       interval: daily
+      time: "14:00"
     directories:
       - /
