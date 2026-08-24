@@ -4,10 +4,9 @@
 
 // "pwd"
 extern "C" char *get_dir_now(char *) {
-    std::string data = std::filesystem::current_path(); // gets current directory
+    static std::string data = std::filesystem::current_path(); // gets current directory
 
-    char *return_me = data.data();
-    return return_me;
+    return data.data();
 }
 
 // "cd"
