@@ -4,7 +4,7 @@
 using namespace std;
 
 char *rmprefix(char *text, char *prefix) {
-    string str = text;
+    static string str = text;
     string pref = prefix;
 #if __cplusplus >= 202002L
     if (
