@@ -9,7 +9,7 @@ jobs:
         name: Test build
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4.0.0
+            - uses: actions/checkout@v7.0.1
             - name: Install libs
               run: |
                 sudo apt install cmake make gcc g++ libc6 libstdc++6 -y
@@ -21,7 +21,7 @@ jobs:
         name: Test build with linter
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4.0.0
+            - uses: actions/checkout@v7.0.1
             - name: Install libs
               run: |
                 sudo apt install cmake make gcc g++ clang-tidy libc6 libstdc++6 -y
