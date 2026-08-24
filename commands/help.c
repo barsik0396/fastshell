@@ -9,4 +9,5 @@ void help(void) {
     printf("  reload             restart fastshell\n");
     printf("  whoami             who am i?\n");
     printf("  pwd                show current directory\n");
+    printf("  cd <dir>           change current dir\n");
 }
