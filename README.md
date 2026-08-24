@@ -34,3 +34,5 @@ fastshell is very fast, stable, secure and small shell written on C and C++.
 | `sh`       | `sh`      | run non-fastshell cmds     |
 | `cycle`    | `cycle`   | just `for (i <= 1000000)`  |
 | `help`     | `help`    | show help                  |
+| `reload`   | `reload`  | restart fastshell          |
+| `whoami`   | `whoami`  | you know this.             |
