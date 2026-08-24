@@ -22,7 +22,7 @@ extern "C" void change_dir(char *dir) {
         << e.code().value()       // returns error code
         << ";"
         << e.code().message()     // returns only message ("No such file or directory")
-        << "\n";
+        << ")\n";
         exit(1);
     }
 }
