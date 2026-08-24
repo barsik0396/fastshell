@@ -5,8 +5,8 @@
 void whoami(void) {
     char *user = getenv("USER");
     if (!user) {
-        printf("nothing");
+        printf("nothing\n");
     } else {
-        printf("current user: %s", user);
+        printf("current user: %s\n", user);
     }
 }
