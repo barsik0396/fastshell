@@ -30,6 +30,8 @@ extern "C" {
         if (isdbg()) {
             asm("int3"); // breakpoint
             abort(); // SIGABRT
+        } else {
+            exit(1);
         }
     }
 }
